@@ -2,6 +2,7 @@
 .page-about {width: 650px; float: right;}
 .boxstyle-header {font-family: 'fira_sansbook', sans-serif;	font-size: 27px; font-weight: 400; color: #3ba8c0;
 	padding: 12px 22px; border-bottom: 2px solid #3ba8c0; display: inline-block; margin: 0 0 23px 0;}
+.headersection {position: absolute; left: -9999px;}
 
 /*Первый блок page-about*/
 .basic-info {background-color: #eff3f7; border-radius: 4px; margin-bottom: 26px;}
@@ -10,7 +11,7 @@
 .basic-info .avatar-box {overflow: hidden; width: 140px; height: 140px; border-radius: 50%; border: 5px solid #32a6bd;}
 .basic-info .avatar {width: 100%;}
 .basic-info .infosheet-wrap {float: right; width: 422px;}
-.basic-info .infosheet-header {font-family: 'fira_sansbook'; font-size: 17px; float: left;}
+.basic-info .infosheet-header {font-family: 'fira_sansmedium'; font-size: 17px; float: left; color: #4a545d;}
 .basic-info .infosheet-info {max-width: 200px; margin: 2px 0 0 18px; font-family: 'fira_sanslight'; font-size: 15px; float: left;}
 .basic-info .infosheet-list {list-style: none; margin: 0; padding: 0;}
 .basic-info .infosheet-item {margin-bottom: 6px;}
@@ -22,8 +23,6 @@
 
 /*Второй и третий блоки вместе page-about*/
 .eucation, .experience {padding-bottom: 15px; background-color: #eff3f7; border-radius: 4px; margin-bottom: 26px;}
-/*.eucation .blockbox-body, 
-.experience .blockbox-body {padding-right: 45px;}*/
 .eucation .eucationwork {list-style: none; background-image: url(../images/work.png); background-repeat: no-repeat; 
 	background-position: 58px 3px; padding-left: 124px;}
 .experience .experiencestady {list-style: none; background-image: url(../images/stady.png); background-repeat: no-repeat;
