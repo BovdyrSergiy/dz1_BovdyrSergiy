@@ -12,7 +12,7 @@
 .basic-info .avatar {width: 100%;}
 .basic-info .infosheet-wrap {float: right; width: 422px;}
 .basic-info .infosheet-header {font-family: 'fira_sansmedium'; font-size: 17px; float: left; color: #4a545d;}
-.basic-info .infosheet-info {max-width: 200px; margin: 2px 0 0 18px; font-family: 'fira_sanslight'; font-size: 15px; float: left;}
+.basic-info .infosheet-info {max-width: 210px; margin: 2px 0 0 18px; font-family: 'fira_sanslight'; font-size: 15px; float: left;}
 .basic-info .infosheet-list {list-style: none; margin: 0; padding: 0;}
 .basic-info .infosheet-item {margin-bottom: 6px;}
 .basic-info .skill {font-family: 'ProximaNovaCond-Semibold', sans-serif; display:inline-block; padding: 2px 12px; background: #3ba8c0; 

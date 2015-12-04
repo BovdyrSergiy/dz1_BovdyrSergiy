@@ -3,7 +3,7 @@
 .headersection {position: absolute; left: -9999px;}
 .boxstyle-header {font-family: 'fira_sansbook', sans-serif;	font-size: 27px; font-weight: 400; color: #3ba8c0;
 	padding: 12px 22px; border-bottom: 2px solid #3ba8c0; display: inline-block; margin: 0 0 26px 0;}
-.basic-info {background-color: #eff3f7; border-radius: 4px; margin-bottom: 26px;}
+.basic-info {background-color: #eff3f7; border-radius: 4px; margin-bottom: 26px; min-height: 840px;}
 /*Список проектов*/
 .basic-info .my-works-list {list-style: none; margin: 0; padding: 0;}
 .basic-info .my-works-item {position: relative; width: 183px; display: inline-block; margin: 0 4px 46px 20px; vertical-align: top;}
