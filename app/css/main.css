@@ -45,7 +45,7 @@ body {height: 100%; background: #fff; background: url(../images/comppatern2.png)
 .nav .nav-item.current {background: #3ba8c0; margin: 0; border-bottom: none; padding-left: 11px; margin-bottom: -2px;}
 .nav .nav-item.current .nav-link {color: #f9fafb; font-size: 22px;}
 .nav .nav-link {font-family: 'fira_sansbook'; display: block; font-size: 20px; text-decoration: none;
-	color: #959aa8; margin-left: 16px; padding: 20px 0;}
+	color: #959aa8; padding: 20px 0 20px 16px;}
 .nav .nav-link:hover {color: #3ba8c0;}
 /*Контакты*/
 .contacts {font-style: normal; margin-bottom: 26px; background: #3ba8c0; border-radius: 4px; overflow: hidden;}

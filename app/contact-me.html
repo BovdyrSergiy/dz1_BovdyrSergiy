@@ -4,7 +4,8 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>Сайт портфолио Бовдырь Сергей Николаевич</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+		<meta name="viewport" content="width=960">
 		<!-- SEO -->
 		<meta name="description" content="Сайт портфолио Бовдырь Сергей Николаевич">
 		<meta name="keywords" content="Сайт портфолио Бовдырь Сергей Николаевич">
@@ -48,7 +49,7 @@
 				<!-- Шапка сайта -->
 				<header class="header">	
 					<div class="headerContainer">
-						<a href="http://btab.pw" target="_blank" class="logo">
+						<a href="http://btab.pw" target="_self" class="logo">
 							<img src="images/logo.png" alt="Сайт btab.pw" title="Сайт btab.pw"><span class="text-logo">Сайт портфолио</span>
 						</a>
 						<ul class="socials">
@@ -99,9 +100,7 @@
 						<label class="name-label">Cообщение<textarea class="textarea" placeholder="Кратко в чём суть"></textarea></label>
 					</div>
 					<div class="box-recaptcha">
-
-						<!-- Место для reCAPTCHA -->
-
+						<div class="g-recaptcha" data-sitekey="6LfYZRITAAAAAIV_r2shy9JTYcD96rlLcqguJ2ey"></div>
 					</div>
 					<div class="box-buttons clearfix">
 						<div class="box-left">
@@ -128,5 +127,6 @@
 		</footer>
 		<script src="bower/jquery/jquery.js"></script>
 		<script src="js/main.js"></script>
+		<script src='https://www.google.com/recaptcha/api.js'></script>
 	</body>
 </html>
