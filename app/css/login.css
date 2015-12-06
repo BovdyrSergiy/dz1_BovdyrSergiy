@@ -35,6 +35,12 @@
 	font: 36px 'fira_sanslight', 'Arial', sans-serif;
 	color: #959aa8;
 }
+.login-page .login-center {
+	padding-left: 160px;
+}
+.login-page .pass-center {
+	padding-left: 154px;
+}
 .login-page .name-input {
 	width: 386px;
 	border-radius: 4px;
