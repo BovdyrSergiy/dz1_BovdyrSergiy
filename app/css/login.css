@@ -1,0 +1,107 @@
+.main-content {
+	width: 100%;
+	min-height: 680px;
+}
+.login-page {
+	width: 591px;
+	height: 483px;
+	background-color: #eff3f7;
+	border-radius: 4px;
+	position: absolute;
+    top: 20%;
+    left: 50%;
+    margin: 0 0 -241.5px -295.5px;
+    box-shadow: 0px 4px 6.86px 0.14px rgba(13, 16, 7, 0.29);
+}
+.login-page .headersection {
+	position: absolute;
+	left: -9999px;
+}
+.login-page .box-header-container {
+	width: 532px;
+	background-color: #48cbe8; 
+	border-bottom: 15px solid #67dffa;
+	border-radius: 4px 4px 0 0;
+	font: 40px 'fira_sansbook', 'Arial', sans-serif;
+	color: #fff;
+	padding: 18px 30px 13px 30px;
+	text-align: center;
+}
+.login-page .box-form {
+	width: 424px;
+	margin: 0 auto 10px;
+}
+.login-page .name-label {
+	font: 36px 'fira_sanslight', 'Arial', sans-serif;
+	color: #959aa8;
+}
+.login-page .name-input {
+	width: 386px;
+	border-radius: 4px;
+	border: 1px solid #48cbe8;
+	outline: none;
+	color: #48cbe8;
+    background-color: #fff;
+    font: 17px 'fira_sanslight', 'Arial', sans-serif;
+	color: #48cbe8;
+	padding: 17px 18px;
+}
+.login-page .box-login {
+	padding-top: 15px;
+}
+.login-page .box-pass {
+	padding-top: 12px;
+	padding-bottom: 22px;
+}
+/*Кнопка*/
+.login-page .buttonstyle {
+	font: 36px 'fira_sansbook', 'Arial', sans-serif;
+    height: 54px;
+    padding: 0 62px;
+    color: #f6f6f6;
+    border-style: solid;
+    border-width: 0 0 4px;
+    border-radius: 8px;
+    border-color: #3ba8c0;
+    background-color: #48cbe8;
+    outline: none;
+}
+.login-page .buttonstyle:hover {
+	border: none;
+	border-top: 2px solid #48cbe8;
+}
+.login-page .buttonstyle:active {
+	border-top: 4px solid #3ba8c0;
+}
+.login-page .box-button {
+	text-align: center;
+}
+/*Общие стили для формы*/
+::-webkit-input-placeholder {
+	font: 17px 'fira_sanslight', 'Arial', sans-serif;
+	color: #48cde8;
+}
+::-moz-placeholder {
+	font: 17px 'fira_sanslight', 'Arial', sans-serif;
+	color: #48cde8;
+}
+:-moz-placeholder {
+	font: 17px 'fira_sanslight', 'Arial', sans-serif;
+	color: #48cde8;
+}
+:-ms-input-placeholder {
+	font: 17px 'fira_sanslight', 'Arial', sans-serif;
+	color: #48cde8;
+}
+:focus::-webkit-input-placeholder {
+	color: transparent
+}
+:focus::-moz-placeholder {
+	color: transparent
+}
+:focus:-moz-placeholder {
+	color: transparent
+}
+:focus:-ms-input-placeholder {
+	color: transparent
+}

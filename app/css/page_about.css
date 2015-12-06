@@ -1,34 +1,116 @@
 /*Общие стили*/
-.page-about {width: 650px; float: right;}
-.boxstyle-header {font-family: 'fira_sansbook', sans-serif;	font-size: 27px; font-weight: 400; color: #3ba8c0;
-	padding: 12px 22px; border-bottom: 2px solid #3ba8c0; display: inline-block; margin: 0 0 23px 0;}
-.headersection {position: absolute; left: -9999px;}
-
+.page-about {
+	width: 650px;
+	float: right;
+}
+.boxstyle-header {
+	font: 27px 'fira_sansbook', 'Arial', sans-serif;
+	font-weight: 400;
+	color: #3ba8c0;
+	padding: 12px 22px;
+	border-bottom: 2px solid #3ba8c0;
+	display: inline-block;
+	margin: 0 0 23px 0;
+}
+.headersection {
+	position: absolute;
+	left: -9999px;
+}
+.basic-info {
+	background-color: #eff3f7;
+	border-radius: 4px;
+	margin-bottom: 26px;
+}
 /*Первый блок page-about*/
-.basic-info {background-color: #eff3f7; border-radius: 4px; margin-bottom: 26px;}
-.basic-info .basic-info-body {padding-bottom: 34px;}
-.basic-info .image-wrap {float: left; margin-top: 12px; margin-left: 55px;}
-.basic-info .avatar-box {overflow: hidden; width: 140px; height: 140px; border-radius: 50%; border: 5px solid #32a6bd;}
-.basic-info .avatar {width: 100%;}
-.basic-info .infosheet-wrap {float: right; width: 422px;}
-.basic-info .infosheet-header {font-family: 'fira_sansmedium'; font-size: 17px; float: left; color: #4a545d;}
-.basic-info .infosheet-info {max-width: 210px; margin: 2px 0 0 18px; font-family: 'fira_sanslight'; font-size: 15px; float: left;}
-.basic-info .infosheet-list {list-style: none; margin: 0; padding: 0;}
-.basic-info .infosheet-item {margin-bottom: 6px;}
-.basic-info .skill {font-family: 'ProximaNovaCond-Semibold', sans-serif; display:inline-block; padding: 2px 12px; background: #3ba8c0; 
-	margin: 0 3px 6px 0; color: #fff; border-radius: 2px; background: #3ba8c0; background: linear-gradient(0deg, rgb(46,140,162) 0%,
-	rgb(46,140,162) 52%, rgb(59,168,192) 53%, rgb(59,168,192) 100%);}
-.basic-info .skills-list {list-style: none;	padding: 0;}
-.basic-info .skills {max-width: 242px;padding: 4px 0 0 1px;}
-
+.basic-info .basic-info-body {
+	padding-bottom: 34px;
+}
+.basic-info .image-wrap {
+	float: left;
+	margin-top: 12px;
+	margin-left: 55px;
+}
+.basic-info .avatar-box {
+	overflow: hidden;
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	border: 5px solid #32a6bd;
+}
+.basic-info .avatar {
+	width: 100%;
+}
+.basic-info .infosheet-wrap {
+	float: right;
+	width: 422px;
+}
+.basic-info .infosheet-header {
+	font: 17px 'fira_sansmedium', 'Arial', sans-serif;
+	float: left;
+	color: #4a545d;
+}
+.basic-info .infosheet-info {
+	max-width: 210px;
+	margin: 2px 0 0 18px;
+	font: 15px 'fira_sanslight', 'Arial', sans-serif;
+	float: left;
+}
+.basic-info .infosheet-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.basic-info .infosheet-item {
+	margin-bottom: 6px;
+}
+.basic-info .skill {
+	font: 14px 'ProximaNovaCond-Semibold', 'Arial', sans-serif;
+	display: inline-block;
+	padding: 3px 14px;
+	background: #3ba8c0; 
+	margin: 0 3px 6px 0;
+	color: #fff;
+	border-radius: 2px;
+	background: #3ba8c0;
+	background: linear-gradient(0deg, rgb(46,140,162) 0%, rgb(46,140,162) 52%, rgb(59,168,192) 53%, rgb(59,168,192) 100%);
+}
+.basic-info .skills-list {
+	list-style: none;
+	padding: 0;
+}
+.basic-info .skills {
+	max-width: 242px;
+	padding: 4px 0 0 1px;
+}
 /*Второй и третий блоки вместе page-about*/
-.eucation, .experience {padding-bottom: 15px; background-color: #eff3f7; border-radius: 4px; margin-bottom: 26px;}
-.eucation .eucationwork {list-style: none; background-image: url(../images/work.png); background-repeat: no-repeat; 
-	background-position: 58px 3px; padding-left: 124px;}
-.experience .experiencestady {list-style: none; background-image: url(../images/stady.png); background-repeat: no-repeat;
-    background-position: 54px 4px; padding-left: 124px;}
-.experience .experiencecourse {list-style: none; background-image: url(../images/course.png); background-repeat: no-repeat;
-    background-position: 61px 3px; padding-left: 124px;}
-.eucation .workexp-list, .experience .workexp-list {list-style: none; margin: 0; padding: 0; position: relative;}
-.eucation .workexp-header, .experience .workexp-header {font-family: 'fira_sansbook'; font-size: 17px; width: 477px;}
-.eucation .workexp-info, .experience .workexp-info {margin: -4px 0 24px 0; font-family: 'fira_sanslight'; font-size: 15px; width: 477px;}
+.eucation {
+	padding-bottom: 15px;
+}
+.eucation .list-item-box {
+	list-style: none;
+	padding-left: 124px;
+}
+.eucation .eucationwork {
+	background: url(../images/work.png) 58px center no-repeat;
+}
+.eucation .experiencestady {
+	background: url(../images/stady.png) 54px center no-repeat;
+}
+.eucation .experiencecourse {
+	background: url(../images/course.png) 61px center no-repeat;
+}
+.eucation .workexp-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.eucation .workexp-header {
+	font: 17px 'fira_sansbook', 'Arial', sans-serif;
+	line-height: 1.4;
+	width: 477px;
+}
+.eucation .workexp-info {
+	margin: -2px 0 24px 0;
+	font: 15px 'fira_sanslight', 'Arial', sans-serif;
+	width: 477px;
+}

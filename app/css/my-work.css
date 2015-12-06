@@ -1,26 +1,107 @@
 /*Общие стили*/
-.page-about {width: 650px; float: right;}
-.headersection {position: absolute; left: -9999px;}
-.boxstyle-header {font-family: 'fira_sansbook', sans-serif;	font-size: 27px; font-weight: 400; color: #3ba8c0;
-	padding: 12px 22px; border-bottom: 2px solid #3ba8c0; display: inline-block; margin: 0 0 26px 0;}
-.basic-info {background-color: #eff3f7; border-radius: 4px; margin-bottom: 26px; min-height: 840px;}
+.page-about {
+	width: 650px;
+	float: right;
+}
+.headersection {
+	position: absolute;
+	left: -9999px;
+}
+.boxstyle-header {
+	font: 27px 'fira_sansbook', 'Arial', sans-serif;
+	font-weight: 400;
+	color: #3ba8c0;
+	padding: 12px 22px;
+	border-bottom: 2px solid #3ba8c0;
+	display: inline-block;
+	margin: 0 0 26px 0;
+}
+.basic-info {
+	background-color: #eff3f7;
+	border-radius: 4px;
+	margin-bottom: 26px;
+	min-height: 840px;
+}
 /*Список проектов*/
-.basic-info .my-works-list {list-style: none; margin: 0; padding: 0;}
-.basic-info .my-works-item {position: relative; width: 183px; display: inline-block; margin: 0 4px 46px 20px; vertical-align: top;}
-.basic-info .project-image {width: 179px; height: 125px; border: 2px solid #3ba8c0; border-radius: 4px;}
-.basic-info .project-box {width: 179px; height: 125px; text-align: center;}
-.basic-info .project-box {display: inline-block; width: 183px; height: 129px; margin: 0; position: relative;}
-.basic-info .project-wrapper {position: absolute; top: 0; bottom: 0; left: 0; right: 0; background-color: rgb(1, 108, 164); 
-	filter: alpha(opacity=0); background-color: rgba(1, 108, 164, 0.749); font: 12px 'fira_sansbook'; border-radius: 4px;
-    opacity: 0; transition: opacity .3s ease-out;}
-.basic-info .project-link {text-decoration: none; color: #eff3f7; margin-top: 54px; padding: 0 5px; 
-	display: inline-block; border: 2.5px solid #eff3f7; border-radius: 4px;}
-.basic-info .project-out-link {font: 13px 'fira_sanslight_italic'; text-decoration: none; color: #3ba8c0;}
-.basic-info .project-text {font: 15px 'fira_sanslight'; text-align: center;}
-.basic-info .project-box:hover .project-wrapper {opacity: 1; filter: alpha(opacity=70);}
+.basic-info .my-works-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.basic-info .my-works-item {
+	position: relative;
+	width: 183px;
+	display: inline-block;
+	margin: 0 4px 46px 20px;
+	vertical-align: top;
+}
+.basic-info .project-image {
+	width: 179px;
+	height: 125px;
+	border: 2px solid #3ba8c0;
+	border-radius: 4px;
+}
+.basic-info .project-box {
+	width: 179px;
+	height: 125px;
+	text-align: center;
+}
+.basic-info .project-box {
+	display: inline-block;
+	width: 183px;
+	height: 129px;
+	margin: 0;
+	position: relative;
+}
+.basic-info .project-wrapper {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgb(1, 108, 164); 
+	filter: alpha(opacity=0);
+	background-color: rgba(1, 108, 164, 0.749);
+	font: 12px 'fira_sansbook', 'Arial', sans-serif;
+	border-radius: 4px;
+    opacity: 0;
+    transition: opacity .3s ease-out;
+}
+.basic-info .project-link {
+	text-decoration: none;
+	color: #eff3f7;
+	margin-top: 54px;
+	padding: 0 5px; 
+	display: inline-block;
+	border: 2.5px solid #eff3f7;
+	border-radius: 4px;
+}
+.basic-info .project-out-link {
+	font: 13px 'fira_sanslight_italic', 'Arial', sans-serif;
+	text-decoration: none;
+	color: #3ba8c0;
+}
+.basic-info .project-text {
+	font: 15px 'fira_sanslight', 'Arial', sans-serif;
+	text-align: center;
+}
+.basic-info .project-box:hover .project-wrapper {
+	opacity: 1;
+	filter: alpha(opacity=70);
+}
 /*Добавить проект*/
-.basic-info .add-project {border: 1px dashed #3ba8c0; border-radius: 4px; 
-	background: #edf8fc url(../images/add-image.png) no-repeat 75px 34px;}
-.basic-info .add-project-text {font: 13px 'fira_sanslight'; color: #3ba8c0; 
-position: absolute; top: 82px; left: 40px;}
-.basic-info .add-project-link {display: block;}
+.basic-info .add-project {
+	border: 1px dashed #3ba8c0;
+	border-radius: 4px; 
+	background: #edf8fc url(../images/add-image.png) no-repeat 75px 34px;
+}
+.basic-info .add-project-text {
+	font: 13px 'fira_sanslight', 'Arial', sans-serif;
+	color: #3ba8c0;
+	position: absolute;
+	top: 82px;
+	left: 40px;
+}
+.basic-info .add-project-link {
+	display: block;
+}

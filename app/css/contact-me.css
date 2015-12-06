@@ -13,21 +13,15 @@
 	left: -9999px;
 }
 .contact-me .box-header-container {
-	width: 100%;
-	height: 121px;
+	width: 604px;
 	background-color: #48cbe8; 
 	border-bottom: 17px solid #67dffa;
 	border-radius: 4px 4px 0 0;
-	font: 27px 'fira_sansbook';
+	font: 27px 'fira_sansbook', 'Arial', sans-serif;
 	color: #fff;
-	padding: 0;
-	margin-bottom: 46px;
+	padding: 42px 23px 38px 23px;
+	margin-bottom: 42px;
 	text-align: center;
-}
-.contact-me .box-header {
-	position: absolute;
-	top: 39px;
-	left: 59px;
 }
 /*Общие стили для формы*/
 .contact-me .contact-form {
@@ -43,19 +37,19 @@
 	width: 193px;
 }
 ::-webkit-input-placeholder {
-	font: 13px 'fira_sanslight';
+	font: 13px 'fira_sanslight', 'Arial', sans-serif;
 	color: #48cde8;
 }
 ::-moz-placeholder {
-	font: 13px 'fira_sanslight';
+	font: 13px 'fira_sanslight', 'Arial', sans-serif;
 	color: #48cde8;
 }
 :-moz-placeholder {
-	font: 13px 'fira_sanslight';
+	font: 13px 'fira_sanslight', 'Arial', sans-serif;
 	color: #48cde8;
 }
 :-ms-input-placeholder {
-	font: 13px 'fira_sanslight';
+	font: 13px 'fira_sanslight', 'Arial', sans-serif;
 	color: #48cde8;
 }
 :focus::-webkit-input-placeholder {
@@ -79,7 +73,7 @@
 	margin-bottom: 12px;
 }
 .contact-me .name-label {
-	font: 19px 'fira_sanslight';
+	font: 19px 'fira_sanslight', 'Arial', sans-serif;
 	color: #959aa8;
 }
 .contact-me .textarea {
@@ -91,7 +85,7 @@
 	outline: none;
 	color: #48cbe8;
     background-color: #fff;
-    font: 13px 'fira_sanslight';
+    font: 13px 'fira_sanslight', 'Arial', sans-serif;
 	color: #48cde8;
 	padding: 9px;
 }
@@ -118,7 +112,7 @@
     color: #f6f6f6;
     border-style: solid;
     border-width: 0 0 2px;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 .contact-me .submit-in-form {
     border-color: #3ba8c0;
