@@ -105,3 +105,196 @@
 .basic-info .add-project-link {
 	display: block;
 }
+/*Общие стили для формы*/
+::-webkit-input-placeholder {
+	font: 13px 'fira_sanslight', 'Arial', sans-serif;
+	color: #48cde8;
+}
+::-moz-placeholder {
+	font: 13px 'fira_sanslight', 'Arial', sans-serif;
+	color: #48cde8;
+}
+:-moz-placeholder {
+	font: 13px 'fira_sanslight', 'Arial', sans-serif;
+	color: #48cde8;
+}
+:-ms-input-placeholder {
+	font: 13px 'fira_sanslight', 'Arial', sans-serif;
+	color: #48cde8;
+}
+:focus::-webkit-input-placeholder {
+	color: transparent
+}
+:focus::-moz-placeholder {
+	color: transparent
+}
+:focus:-moz-placeholder {
+	color: transparent
+}
+:focus:-ms-input-placeholder {
+	color: transparent
+}
+/*///////////////////<!--bpopup-->//////////////////*/
+.project-element { 
+    width: 362px;
+    min-height: 490px;
+    background-color: #eff3f7;
+    border-radius:5px;
+    position: relative;
+    display:none; 
+}
+.b-close {
+	cursor:pointer;
+	height: 25px;
+	width: 25px;
+	background: url(../images/close.png) no-repeat;
+	position:absolute;
+	top: 8px;
+	right: 13px;
+}
+/*.project-element .contact-form {
+	margin-bottom: 22px;
+}*/
+.project-element .box-header-container {
+	width: 306px;
+	background-color: #48cbe8; 
+	border-bottom: 9px solid #67dffa;
+	border-radius: 4px 4px 0 0;
+	font: 25px 'fira_sansregular', 'Arial', sans-serif;
+	color: #fff;
+	padding: 3px 44px 2px 12px;
+	text-align: left;
+	margin-bottom: 4px;
+}
+.project-element .box-form {
+	padding-left: 21px;
+	height: 378px;
+}
+.project-element .name-label {
+	font: 17px 'fira_sansbook', 'Arial', sans-serif;
+	color: #959aa8;
+}
+.project-element .name-input {
+	width: 299px;
+	border-radius: 4px;
+	border: 1px solid #48cbe8;
+	outline: none;
+	color: #48cbe8;
+    background-color: #fff;
+    font: 13px 'fira_sanslight', 'Arial', sans-serif;
+	color: #48cbe8;
+	padding: 10px 9px;
+	margin-bottom: 7px;
+}
+.project-element .textarea {
+	width: 299px;
+	height: 93px;
+	resize: none;
+	border-radius: 4px;
+	border: 1px solid #48cbe8;
+	outline: none;
+    background-color: #fff;
+    font: 13px 'fira_sanslight', 'Arial', sans-serif;
+	color: #48cde8;
+	padding: 9px;
+	margin-bottom: 6px;
+}
+/*style for button add image*/
+.project-element .box-load-img {
+	width: 318px;
+	position: relative;
+}
+.project-element .name-input-load {
+	width: 268px;
+	border-radius: 4px 0 0 4px;
+	border: 1px solid #48cbe8;
+	outline: none;
+	color: #48cbe8;
+    background-color: #fff;
+    font: 13px 'fira_sanslight', 'Arial', sans-serif;
+	color: #48cbe8;
+	padding: 10px 9px;
+	margin-bottom: 4px;
+	float: left;
+	box-sizing: border-box;
+}
+.project-element .box-load {
+    border: 1px solid #48cbe8;
+    border-radius: 0 4px 4px 0;
+    overflow: hidden;
+    width: 50px;
+    min-height: 42px;
+    max-height: 42px;
+    float: right;
+    background: #48cbe8 url(../images/load-img.png) 8px 7px no-repeat;
+    box-sizing: border-box;
+}
+/*Hide work button*/
+.project-element .loadinputbox {
+	position: absolute;
+}
+.project-element .hideform { 
+    background-color: #FFFFFF;
+    border: 1px solid #48cbe8;
+    border-radius: 4px;
+    height: 40px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    text-align: left;
+    vertical-align: middle;
+    width: 318px;
+    -moz-opacity: 0; 
+    filter: alpha(opacity=0); 
+    opacity: 0;
+}
+.project-element .selectbutton { 
+    background-color: #48cbe8;
+    border: 1px solid #48cbe8;
+    border-radius: 4px;
+    color: #FFFFFF;
+    float: right;
+    font-size: 16px;
+    height: 34px;
+    line-height: 34px;
+    overflow: hidden;
+    padding: 2px 6px;
+    text-align: center;
+    vertical-align: middle;
+    width: 50px;
+}
+.hideform #upload{
+    position:absolute; 
+    top:0; 
+    left:0; 
+    width:100%; 
+    -moz-opacity: 0; 
+    filter: alpha(opacity=0); 
+    opacity: 0; 
+    font-size: 150px; 
+    height: 36px; 
+    z-index:20;
+}
+/*Кнопка*/
+.project-element .buttonstyle {
+	font: 19px 'fira_sansbook', 'Arial', sans-serif;
+    height: 31px;
+    padding: 1px 27px;
+    color: #fff;
+    border-style: solid;
+    border-width: 0 0 2px;
+    border-radius: 4px;
+    border-color: #3ba8c0;
+    background-color: #48cbe8;
+    outline: none;
+}
+.project-element .buttonstyle:hover {
+	border: none;
+	border-top: 2px solid #48cbe8;
+}
+.project-element .buttonstyle:active {
+	border-top: 2px solid #3ba8c0;
+}
+.project-element .box-button {
+	text-align: center;
+}
