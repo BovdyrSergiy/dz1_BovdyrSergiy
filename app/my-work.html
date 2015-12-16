@@ -34,6 +34,7 @@
 		<link rel="stylesheet" href="fonts/ProximaNovaCond-Semibold.css">
 		<!-- Bower CSS -->
 		<link rel="stylesheet" href="bower/normalize-css/normalize.css">
+		<link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
 		<!-- CSS -->
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/my-work.css">
@@ -138,12 +139,13 @@
 		<div class="project-element">
 		    <div class="box-header-container">Добавление проекта<a class="b-close"></a></div>
 					<div class="contact-form">
-						<form name="form" method="post" action="#">
+						<form id="add-new-project" role="form" class="form">
+							<div class="server-mes error-mes"></div>
+							<div class="server-mes success-mes"></div>
 							<div class="box-form">
 								<div class="box-name">
-									<label class="name-label">Название проекта<input class="name-input" type="text" placeholder="Введите название"></label>
+									<label class="name-label">Название проекта<input class="name-input" name="project-name" type="text" placeholder="Введите название"></label>
 								</div>
-
 
 								<div class="box-load-img clearfix">								
 									<label class="name-label">Картинка проекта</label>
@@ -153,15 +155,15 @@
 										<input id="upload" type="file" name="upload" placeholder="Загрузите изображение">
 										</div>
 									</div>
-									<input class="name-input-load" type="text" placeholder="Загрузите изображение">
+									<input class="name-input-load" name="get-name-load" type="text" placeholder="Загрузите изображение">
 									<div class="box-load"></div>
 								</div>
 
 								<div class="box-name">
-									<label class="name-label">URL проекта<input class="name-input" type="text" placeholder="Добавьте ссылку"></label>
+									<label class="name-label">URL проекта<input class="name-input" name="url-name" type="text" placeholder="Добавьте ссылку"></label>
 								</div>
 								<div class="box-textarea">
-									<label class="name-label">Описание<textarea class="textarea" placeholder="Пара слов о Вашем проекте"></textarea></label>
+									<label class="name-label">Описание<textarea class="textarea" name="get-text-name" placeholder="Пара слов о Вашем проекте"></textarea></label>
 								</div>
 							</div>
 							<div class="box-button">
@@ -175,20 +177,21 @@
 		<script src="bower/bPopup/jquery.bpopup.min.js"></script>
 		<script src="bower/jquery.placeholder/jquery.placeholder.min.js"></script>
 		<script src="js/init-placeholder.js"></script>
+		<script src="bower/qtip2/jquery.qtip.js"></script>
+<!-- 
 		<script src="js/init-bpopup.js"></script>
+		 -->
 		<script src="js/main.js"></script>
+
+		<script src="js/module.js"></script>
+		
 		<script>
-			function getName (str){
-			    if (str.lastIndexOf('\\')){
-			        var i = str.lastIndexOf('\\')+1;
-			    }
-			    else{
-			        var i = str.lastIndexOf('/')+1;
-			    }						
-			    var filename = str.slice(i);			
-			    var uploaded = document.getElementById("name-input-load");
-			    uploaded.innerHTML = filename;
-			}
+
+			// $('input[type="file"]').on('change', function (event, files, label) {
+		 //    var file_name = this.value.replace(/\\/g, '/').replace(/.*\//, '')
+		 //    $('input[type="file"]').text(file_name);
+			// });
+
 		</script>
 	</body>
 </html>
