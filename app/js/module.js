@@ -1,30 +1,35 @@
 var myModule = (function () {
 
+	// Инициализирует наш модуль
 	var init = function () {
 		_setUpListners();
-	};
+		};
 
+	// Прослушивает события
 	var _setUpListners = function () {
 		$('.add-project-link').on('click', _showModal); // открыть модальное окно
 		$('#add-new-project').on('submit', _addProject); // добавление проекта
-	};
+		};
 
+	// Работает с модальным окном
 	var _showModal = function (e) {
 		console.log('открыть модальное окно!');
 		e.preventDefault();
 
-		var divPopup = $('.project-element');
+		var divPopup = $('.project-element'),
+			form = divPopup.find('.form');
 		
-        $('.project-element').bPopup({
+        divPopup.bPopup({
     			fadeSpeed: 'fast',
     			followSpeed: 1000,
     			modalColor: '#58697A',
     			onClose: function () {
-
+    				form.find('.success-mes').text('').hide();
     			}
 		});
-	};
+		};
 
+	// Добавляет проект
 	var _addProject = function (e) {
 		console.log('добавление проекта!');
 		e.preventDefault();
@@ -32,31 +37,49 @@ var myModule = (function () {
 		// объявляем переменные
 		var form = $(this),
 			url = 'add_project.php',
-			data = form.serialize();
+			myServerGiveMeAnAnswer = _ajaxForm(form, url);
+		
+		myServerGiveMeAnAnswer.done(function(ans) {
 
-		console.log(data);
+			var successBox = form.find('.success-me'),
+				errorBox = form.find('.error-mes');
 
-		// запрос на сервер
-		$.ajax({
+			if(ans.status === 'OK'){
+				errorBox.hide();
+				successBox.text(ans.text).show();
+			}else{
+				successBox.hide();
+				errorBox.text(ans.text).show();
+			}
+		})
+		};
+
+	// Универсальная функция
+	// Для её работы используются
+	// @form - форма
+	// @url - адрес php файла к которому мы обращаемся
+	// 1. Собирает данные из формы
+	// 2. Проверяет форму
+	// 3. Делает запрос на сервер и возращает ответ с сервера
+	var _ajaxForm = function (form, url) {
+
+		// if(!valid) return false;
+		data = form.serialize();
+
+		var result = $.ajax({
 			url: url,
 			type: 'POST',
 			dataType: 'json',
 			data: data,
-		})
-		.done(function(ans) {
-			console.log(ans);
-			if(ans.status === 'OK'){
-				form.find('.success-mes').text(ans.text).show();
-			}else{
-				form.find('.error-mes').text(ans.text).show();
-			}
-		})
-		.fail(function() {
-			console.log("error");
-		})
+		}).fail(function(ans) {
+			console.log('Проблемы в PHP');
+			form.find('error-mes').text('На сервере произошла ошибка').show();
+		});
 
-	};
+		return result;
+		};
 
+	// Возвращаем объект (публичные методы)
 	return {
 		init: init
 	};

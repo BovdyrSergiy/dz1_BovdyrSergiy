@@ -140,11 +140,11 @@
 		    <div class="box-header-container">Добавление проекта<a class="b-close"></a></div>
 					<div class="contact-form">
 						<form id="add-new-project" role="form" class="form">
-							<div class="server-mes error-mes"></div>
-							<div class="server-mes success-mes"></div>
+							<div class="server-mes error-mes">Заполните имя!</div>
+							<div class="server-mes success-mes">Вы молодец!</div>
 							<div class="box-form">
 								<div class="box-name">
-									<label class="name-label">Название проекта<input class="name-input" name="project-name" type="text" placeholder="Введите название"></label>
+									<label for="projectName" class="name-label">Название проекта<input id="projectName" class="name-input" name="projectName" type="text" placeholder="Введите название" qtip-content="Вы не ввели название"></label>
 								</div>
 
 								<div class="box-load-img clearfix">								
