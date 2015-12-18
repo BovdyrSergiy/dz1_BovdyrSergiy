@@ -211,11 +211,13 @@
 	background-color: #fad2d1;
 	border-color: #f97e76;
 	color: #f97e76;
+	display: none;
 }
 .success-mes {	
 	background-color: #b8e1ce;
 	border-color: #49bb7b;
-	color: #49bb7b;	
+	color: #49bb7b;
+	display: none;
 }
 /*style for button add image*/
 .project-element .box-load-img {

@@ -71,6 +71,8 @@ body {
 	position: absolute;
 	top: 14px;
 	left: 0;
+	width: 109px;
+	height: 100px;
 }
 .header .text-logo {
 	position: absolute;
@@ -109,25 +111,25 @@ body {
 	background-position: -2px -259px;
 }
 .ico_vk:hover {
-	background-position: -4px -204px;
+	background-position: -4px -206px;
 }
 .ico_tw {
 	background-position: -3px -155px;
 }
 .ico_tw:hover {
-	background-position: -4px -101px;
+	background-position: -4px -103px;
 }
 .ico_facebook {
 	background-position: -2px -52px;
 }
 .ico_facebook:hover {
-	background-position: -4px 2px;
+	background-position: -4px 0px;
 }
 .ico_gihtub {
 	background-position: -3px -360px;
 }
 .ico_gihtub:hover {
-	background-position: -3px -308px;
+	background-position: -3px -310px;
 }
 /*Сайдбар*/
 .sidebar {
@@ -170,7 +172,7 @@ body {
 	font-size: 20px;
 	text-decoration: none;
 	color: #959aa8;
-	padding: 20px 0 20px 16px;
+	padding: 20px 16px 20px 16px;
 }
 .nav .nav-link:hover {
 	color: #3ba8c0;
