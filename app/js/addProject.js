@@ -15,7 +15,6 @@ var myModule = (function () {
 
 	// Работает с модальным окном
 	var _showModal = function (e) {
-		console.log('открыть модальное окно!');
 		e.preventDefault();
 
 		var divPopup = $('.project-element'),
@@ -27,6 +26,8 @@ var myModule = (function () {
     			modalColor: '#58697A',
     			onClose: function () {
     				form.find('.success-mes').text('').hide();
+    				form.find('.box-project-error').hide();
+    				form.trigger('reset');
     			}
 		});
 		};
@@ -46,22 +47,25 @@ var myModule = (function () {
 		// объявляем переменные
 		var form = $(this),
 				url = 'add_project.php',
-				myServerGiveMeAnAnswer = _ajaxForm(form, url);
+				defObj = _ajaxForm(form, url);
 		
-		myServerGiveMeAnAnswer.done(function(ans) {
+		// Проверяем, а был ли запрос на сервер?
+		if(defObj){
+			defObj.done(function(ans) {
 
-			var successBox = form.find('.success-me'),
-				errorBox = form.find('.error-mes');
+				var successBox = form.find('.success-me'),
+					errorBox = form.find('.error-mes');
 
-			if(ans.status === 'OK'){
-				errorBox.hide();
-				successBox.text(ans.text).show();
-			}else{
-				successBox.hide();
-				errorBox.text(ans.text).show();
-			}
-		})
-		};
+				if(ans.status === 'OK'){
+					errorBox.hide();
+					successBox.text(ans.text).show();
+				}else{
+					successBox.hide();
+					errorBox.text(ans.text).show();
+				}
+			});
+		}
+	};
 
 	// Универсальная функция
 	// Для её работы используются
@@ -72,7 +76,8 @@ var myModule = (function () {
 	// 3. Делает запрос на сервер и возращает ответ с сервера
 	var _ajaxForm = function (form, url) {
 
-		// if(!valid) return false;
+		if (!validation.validateForm(form)) return false;
+
 		data = form.serialize();
 
 		var result = $.ajax({

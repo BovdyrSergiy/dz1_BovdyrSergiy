@@ -89,18 +89,6 @@
 	color: #48cde8;
 	padding: 9px;
 }
-.contact-me .textarea-error {
-	width: 380px;
-	height: 182px;
-	resize: none;
-	border-radius: 4px;
-	border: 1px solid #f97e76;
-	outline: none;
-    background-color: rgba(249, 126, 118, 0.329);
-    font: 13px 'fira_sanslight', 'Arial', sans-serif;
-    color: #48cde8;
-	padding: 9px;
-}
 .contact-me .name-input {
 	width: 171px;
 	border-radius: 4px;
@@ -111,15 +99,9 @@
 	color: #48cde8;
 	padding: 9px;
 }
-.contact-me .name-input-error {
-	width: 171px;
-	border-radius: 4px;
-	border: 1px solid #f97e76;
-	outline: none;
-    background-color: rgba(249, 126, 118, 0.329);
-    font: 13px 'fira_sanslight';
-    color: #48cde8;
-	padding: 9px;
+.has-error {
+	border: 1px solid #f97e76 !important;
+	background-color: rgba(249, 126, 118, 0.329) !important;
 }
 /*reCAPTCHA*/
 .contact-me .box-recaptcha {

@@ -221,30 +221,6 @@
 	padding: 9px;
 	margin-bottom: 6px; 
 }
-/*Сервер сообщения - Дима*/
-/*.server-mes {
-	border-radius: 4px;
-	border: 1px solid;
-	font-size: 12px;
-	width: 318px;
-	padding: 6px 12px;
-	margin: 0 0 6px 21px;
-	box-sizing: border-box;
-	display: none;
-}
-.error-mes {
-	background-color: #fad2d1;
-	border-color: #f97e76;
-	color: #f97e76;
-	display: none;
-}
-.success-mes {	
-	background-color: #b8e1ce;
-	border-color: #49bb7b;
-	color: #49bb7b;
-	display: none;
-}*/
-
 /*Сервер сообщение - PSD*/
 .project-element .box-project-error {
 	width: 317px;
@@ -302,18 +278,9 @@
 	float: left;
 	box-sizing: border-box;
 }
-.project-element .name-input-load-error {
-	width: 268px;
-	border-radius: 4px 0 0 4px;
-	border: 1px solid #f97e76;
-	outline: none;
-	color: #48cbe8;
-    background-color: rgba(249, 126, 118, 0.329);
-    font: 13px 'fira_sanslight', 'Arial', sans-serif;
-    padding: 10px 9px;
-    margin-bottom: 4px;
-	float: left;
-	box-sizing: border-box;
+.has-error {
+	border: 1px solid #f97e76 !important;
+	background-color: rgba(249, 126, 118, 0.329) !important;
 }
 .project-element .box-load {
     border: 1px solid #48cbe8;
