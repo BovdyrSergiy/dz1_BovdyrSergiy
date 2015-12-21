@@ -8,8 +8,10 @@ var myModule = (function () {
 	// Прослушивает события
 	var _setUpListners = function () {
 		$('.add-project-link').on('click', _showModal); // открыть модальное окно
-		$('#add-new-project').on('submit', _addProject); // добавление проекта
+		$('#upload').on('change', _getNameImage); // загрузка картинки в форму
+		$('#add-new-project').on('submit', _addProject); // добавление проекта		
 		};
+		
 
 	// Работает с модальным окном
 	var _showModal = function (e) {
@@ -28,6 +30,13 @@ var myModule = (function () {
     			}
 		});
 		};
+	
+	// Загрузка картинки
+	var _getNameImage = function () {
+   		var input = $(this),
+    		name = input[0].files[0].name; // имя загруженного файла
+   		$('.name-input-load').val(name);
+  		};
 
 	// Добавляет проект
 	var _addProject = function (e) {
@@ -36,8 +45,8 @@ var myModule = (function () {
 
 		// объявляем переменные
 		var form = $(this),
-			url = 'add_project.php',
-			myServerGiveMeAnAnswer = _ajaxForm(form, url);
+				url = 'add_project.php',
+				myServerGiveMeAnAnswer = _ajaxForm(form, url);
 		
 		myServerGiveMeAnAnswer.done(function(ans) {
 
@@ -73,7 +82,7 @@ var myModule = (function () {
 			data: data,
 		}).fail(function(ans) {
 			console.log('Проблемы в PHP');
-			form.find('error-mes').text('На сервере произошла ошибка').show();
+			form.find('.box-project-error').show();
 		});
 
 		return result;

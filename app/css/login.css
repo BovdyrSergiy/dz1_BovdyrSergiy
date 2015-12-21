@@ -46,10 +46,19 @@
 	border-radius: 4px;
 	border: 1px solid #48cbe8;
 	outline: none;
-	color: #48cbe8;
     background-color: #fff;
     font: 17px 'fira_sanslight', 'Arial', sans-serif;
 	color: #48cbe8;
+	padding: 17px 18px;
+}
+.login-page .name-input-error {
+	width: 386px;
+	border-radius: 4px;	
+	border: 1px solid #f97e76;
+	outline: none;
+    background-color: rgba(249, 126, 118, 0.329);
+    font: 17px 'fira_sanslight', 'Arial', sans-serif;
+    color: #48cbe8;
 	padding: 17px 18px;
 }
 .login-page .box-login {

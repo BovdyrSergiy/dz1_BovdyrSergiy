@@ -25,7 +25,7 @@
 		<link rel="icon" type="image/png" href="images/favicons/favicon-96x96.png" sizes="96x96">
 		<link rel="icon" type="image/png" href="images/favicons/favicon-16x16.png" sizes="16x16">
 		<link rel="manifest" href="images/favicons/manifest.json">
-		<link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg"> <!-- color="#5bbad5" -->
+		<link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg">
 		<meta name="msapplication-TileColor" content="#da532c">
 		<meta name="msapplication-TileImage" content="/mstile-144x144.png">
 		<meta name="theme-color" content="#ffffff">
@@ -140,11 +140,16 @@
 		    <div class="box-header-container">Добавление проекта<a class="b-close"></a></div>
 					<div class="contact-form">
 						<form id="add-new-project" role="form" class="form">
-							<div class="server-mes error-mes">Заполните имя!</div>
-							<div class="server-mes success-mes">Вы молодец!</div>
+							<div class="box-project-error">
+								<h2 class="box-header-error">Ошибка!</h2>
+								<p class="box-text-error">Невозможно добавить проект.</p>
+		   					<a class="b-close-x">×</a>
+		   				</div>
+<!-- 							<div class="server-mes error-mes">Заполните имя!</div>
+							<div class="server-mes success-mes">Вы молодец!</div> -->
 							<div class="box-form">
 								<div class="box-name">
-									<label for="projectName" class="name-label">Название проекта<input id="projectName" class="name-input" name="projectName" type="text" placeholder="Введите название" qtip-content="Вы не ввели название"></label>
+									<label for="projectName" class="name-label">Название проекта<input id="projectName" class="name-input" name="projectName" type="text" placeholder="Введите название" qtip-content="Введите название"></label>
 								</div>
 
 								<div class="box-load-img clearfix">								
@@ -155,15 +160,15 @@
 										<input id="upload" type="file" name="upload" placeholder="Загрузите изображение">
 										</div>
 									</div>
-									<input class="name-input-load" name="get-name-load" type="text" placeholder="Загрузите изображение">
+									<input class="name-input-load" name="get-name-load" type="text" placeholder="Загрузите изображение" qtip-content="Изображение">
 									<div class="box-load"></div>
 								</div>
 
 								<div class="box-name">
-									<label class="name-label">URL проекта<input class="name-input" name="url-name" type="text" placeholder="Добавьте ссылку"></label>
+									<label class="name-label">URL проекта<input class="name-input" name="url-name" type="text" placeholder="Добавьте ссылку" qtip-content="Ссылка на проект"></label>
 								</div>
 								<div class="box-textarea">
-									<label class="name-label">Описание<textarea class="textarea" name="get-text-name" placeholder="Пара слов о Вашем проекте"></textarea></label>
+									<label class="name-label">Описание<textarea class="textarea" name="get-text-name" placeholder="Пара слов о Вашем проекте" qtip-content="Описание проекта"></textarea></label>
 								</div>
 							</div>
 							<div class="box-button">
@@ -172,6 +177,16 @@
 						</form>
 					</div>
 		</div>
+
+		<div class="project-success">
+		   	<div class="box-project-success">
+					<h2 class="box-header-success">Ура!</h2>
+					<p class="box-text-success">Проект успешно добавлен.</p>
+		   		<a class="b-close-x">×</a>
+		   	</div>			
+		</div>
+
+
 
 		<script src="bower/jquery/jquery.js"></script>
 		<script src="bower/bPopup/jquery.bpopup.min.js"></script>

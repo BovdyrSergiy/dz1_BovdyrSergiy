@@ -183,6 +183,18 @@
 	padding: 10px 9px;
 	margin-bottom: 7px;
 }
+.project-element .name-input-error {
+	width: 299px;
+	border-radius: 4px;
+	border: 1px solid #f97e76;
+	outline: none;
+	color: #48cbe8;
+    background-color: rgba(249, 126, 118, 0.329);
+    font: 13px 'fira_sanslight', 'Arial', sans-serif;
+	color: #48cbe8;
+	padding: 10px 9px;
+	margin-bottom: 7px; 
+}
 .project-element .textarea {
 	width: 299px;
 	height: 93px;
@@ -196,8 +208,21 @@
 	padding: 9px;
 	margin-bottom: 6px;
 }
-/*Сервер сообщения*/
-.server-mes {
+.project-element .textarea-error {
+	width: 299px;
+	height: 93px;
+	resize: none;
+	border-radius: 4px;
+	border: 1px solid #f97e76;
+	outline: none;
+    background-color: rgba(249, 126, 118, 0.329);
+    font: 13px 'fira_sanslight', 'Arial', sans-serif;
+	color: #48cde8;
+	padding: 9px;
+	margin-bottom: 6px; 
+}
+/*Сервер сообщения - Дима*/
+/*.server-mes {
 	border-radius: 4px;
 	border: 1px solid;
 	font-size: 12px;
@@ -218,6 +243,46 @@
 	border-color: #49bb7b;
 	color: #49bb7b;
 	display: none;
+}*/
+
+/*Сервер сообщение - PSD*/
+.project-element .box-project-error {
+	width: 317px;
+    min-height: 60px;
+	border: 1px solid #f97e76;
+    background-color: rgba(249, 126, 118, 0.329);
+    border-radius:4px;
+    margin: 15px 0 7px 21px;
+    position: relative;
+    display: none;
+}
+.project-element .b-close-x {
+	cursor:pointer;
+	height: 10px;
+	width: 10px;
+	color: #f97e76;
+	position:absolute;
+	font-size: 30px;
+	padding: 0;
+	margin: 0;
+	top: -13px;
+	right: 7px;
+}
+.project-element .box-header-error {
+	font: 25px 'fira_sansbook', 'Arial', sans-serif;
+	color: #f97e76;
+	line-height: 1.2;
+	text-align: left;
+	margin: 0;
+    padding: 8px 9px 1px 9px;
+}
+.project-element .box-text-error {
+	font: 15px 'fira_sansbook', 'Arial', sans-serif;
+	color: #f97e76;
+	line-height: 1.2;
+    text-align: left;
+    margin: 0;
+    padding: 1px 9px 5px 9px;
 }
 /*style for button add image*/
 .project-element .box-load-img {
@@ -232,9 +297,21 @@
 	color: #48cbe8;
     background-color: #fff;
     font: 13px 'fira_sanslight', 'Arial', sans-serif;
-	color: #48cbe8;
 	padding: 10px 9px;
 	margin-bottom: 4px;
+	float: left;
+	box-sizing: border-box;
+}
+.project-element .name-input-load-error {
+	width: 268px;
+	border-radius: 4px 0 0 4px;
+	border: 1px solid #f97e76;
+	outline: none;
+	color: #48cbe8;
+    background-color: rgba(249, 126, 118, 0.329);
+    font: 13px 'fira_sanslight', 'Arial', sans-serif;
+    padding: 10px 9px;
+    margin-bottom: 4px;
 	float: left;
 	box-sizing: border-box;
 }
@@ -318,4 +395,51 @@
 .project-element .box-button {
 	text-align: center;
 	margin-bottom: 22px;
+}
+/*///////////////////<!--bpopup-project-success-->//////////////////*/
+.project-success { 
+    width: 362px;
+    min-height: 103px;
+    background-color: #eff3f7;
+    border-radius:5px;
+    position: relative;
+    display:none;
+}
+.project-success .box-project-success {
+	width: 320px;
+    min-height: 60px;
+	border: 1px solid #49bb7b;
+    background-color: rgba(73, 187, 123, 0.329);
+    border-radius:4px;
+    position:absolute;
+    top: 21px;
+    left: 21px;
+}
+.project-success .b-close-x {
+	cursor:pointer;
+	height: 10px;
+	width: 10px;
+	color: #49bb7b;
+	position:absolute;
+	font-size: 30px;
+	padding: 0;
+	margin: 0;
+	top: -13px;
+	right: 7px;
+}
+.project-success .box-header-success {
+	font: 25px 'fira_sansbook', 'Arial', sans-serif;
+	color: #49bb7b;
+	line-height: 1.2;
+	text-align: left;
+	margin: 0;
+    padding: 8px 9px 1px 9px;
+}
+.project-success .box-text-success {
+	font: 15px 'fira_sansbook', 'Arial', sans-serif;
+	color: #49bb7b;
+	line-height: 1.2;
+    text-align: left;
+    margin: 0;
+    padding: 1px 9px 5px 9px;
 }
