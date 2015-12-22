@@ -56,8 +56,8 @@ var validation = (function () {
 			style: {
 				classes: 'qtip-mystyle qtip-rounded qtip-red',
 				tip: {
-					height: 10,
-					width: 16
+					height: 7,
+					width: 10,
 				}
 			}
 		}).trigger('show');

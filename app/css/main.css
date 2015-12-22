@@ -268,3 +268,13 @@ body {
 	text-align: center;
 	font-size: 13px;
 }
+.qtip-mystyle {
+	font: 13px 'fira_sansbook', 'Arial', sans-serif;
+	color: #fff;
+	padding: 0 3px 0 3px;
+	border-radius: 2px;
+	border-color: #F78B83;
+	line-height: 1.2;
+	text-align: left;
+	background-color: rgb(249, 126, 118);
+}
