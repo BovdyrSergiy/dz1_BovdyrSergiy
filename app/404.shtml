@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Сайт портфолио Бовдырь Сергей Николаевич</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=960">
+    <!-- SEO -->
+    <meta name="description" content="Сайт портфолио Бовдырь Сергей Николаевич">
+    <meta name="keywords" content="Сайт портфолио Бовдырь Сергей Николаевич">
+    <meta name="author" content="Бовдырь Сергей Николаевич">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/favicons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="images/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="images/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="images/favicons/manifest.json">
+    <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- fonts -->
+    <link rel="stylesheet" href="fonts/fira.css">
+    <!-- Bower CSS -->
+    <link rel="stylesheet" href="bower/normalize-css/normalize.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/my404.css">
+    <!-- modernizr -->
+    <script src="bower/modernizer/modernizr.js"></script>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите</a> его.</p>
+    <![endif]-->
+    <div class="wrapper">
+      <div class="main-content">
+        <!-- Шапка сайта -->
+        <header class="header"> 
+          <div class="headerContainer">
+            <a href="http://btab.pw" target="_self" class="logo">
+              <img src="images/logo.png" alt="Сайт btab.pw" title="Сайт btab.pw"><span class="text-logo">Сайт портфолио</span>
+            </a>
+            <ul class="socials">
+              <li class="socials-item"><a href="https://vk.com/id322629966" target="_blank" class="ico_vk" title="В контакте">vk.com</a></li>
+              <li class="socials-item"><a href="https://twitter.com/SergiyBovdyr" target="_blank" class="ico_tw" title="Twitter">twitter.com</a></li>   
+              <li class="socials-item"><a href="https://www.facebook.com/profile.php?id=100010864561450" target="_blank" class="ico_facebook" title="Facebook">facebook.com</a></li>
+              <li class="socials-item"><a href="https://github.com/BovdyrSergiy" target="_blank" class="ico_gihtub" title="Github">github.com</a></li>
+            </ul>
+          </div>
+        </header>
+        <div class="container">
+          <!-- Сайдбар -->
+          <aside class="sidebar">
+            <nav class="nav">
+              <ul class="nav-list">
+                <li class="nav-item"><a href="/index.html" class="nav-link">Обо мне</a></li>
+                <li class="nav-item"><a href="/my-work.html" class="nav-link">Мои работы</a></li>
+                <li class="nav-item"><a href="/contact-me.html" class="nav-link">Связаться со мной</a></li>
+              </ul>
+            </nav>
+            <address class="contacts">
+                  <div class="contacts-header"><span class="contacts-header-text">Контакты</span></div>
+                    <ul class="contacts-list">
+                        <li class="contacts-mail"><a href="mailto:bovdir@mail.bg" class="contacts-link"><span class="contact-text">bovdir@mail.bg</span></a></li>
+                        <li class="contacts-phone"><a href="tel:+359879198455" class="contacts-link"><span class="contact-text">+359879198455</span></a></li>
+                        <li class="contacts-skype"><a href="skype:sergnik11?chat" class="contacts-link"><span class="contact-text">sergnik11</span></a></li>
+                    </ul>
+              </address>
+          </aside>
+
+    <section class="my-404">
+    
+      <h1 class="headersection">Сайт портфолио Бовдырь Сергей Николаевич</h1>
+      <div class="box-header-container">Ошибка 404! Такой страницы не существует!</div>
+      <div class="message-text">Выберите в меню нужный Вам раздел сайта или перейдите на <a href="index.html" class="index-link">главную страницу!</a></div>
+
+    </section>
+
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="lock"><a href="/login.html" target="_self" class="lock-inner" title="Вход">Вход</a></div>
+        <div class="copyright">© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
+      </div>
+    </footer>
+    <script src="bower/jquery/jquery.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

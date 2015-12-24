@@ -1,0 +1,44 @@
+.my-404 {
+	width: 650px;
+	min-height: 402px;
+	background-color: #eff3f7;
+	border-radius: 4px;
+	margin-bottom: 26px;
+	float: right;
+	position: relative;
+}
+.my-404 .headersection {
+	position: absolute;
+	left: -9999px;
+}
+.my-404 .box-header-container {
+	width: 604px;
+	background-color: #48cbe8; 
+	border-bottom: 17px solid #67dffa;
+	border-radius: 4px 4px 0 0;
+	font: 27px 'fira_sansbook', 'Arial', sans-serif;
+	color: #fff;
+	padding: 42px 23px 38px 23px;
+	margin-bottom: 42px;
+	text-align: center;
+}
+.my-404 .message-text {
+	width: 604px; 
+	font: 20px 'fira_sansbook', 'Arial', sans-serif;
+	color: #959aa8;
+	padding: 42px 23px 38px 23px;
+	margin-bottom: 42px;
+	text-align: center;
+}
+.my-404 .index-link {
+	font: 27px 'fira_sansbook', 'Arial', sans-serif;
+	color: #3ba8c0;
+	text-decoration: none;
+	text-align: center;
+	line-height: 2.5;
+}
+.my-404 .index-link:hover {
+	padding: 0 10px;
+	border: 3px double #3ba8c0;
+	border-radius: 4px;
+}
