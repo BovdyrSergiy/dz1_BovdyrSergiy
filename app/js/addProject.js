@@ -8,10 +8,10 @@ var myModule = (function () {
 	// Прослушивает события
 	var _setUpListners = function () {
 		$('.add-project-link').on('click', _showModal); // открыть модальное окно
-		$('#upload').on('change', _getNameImage); // загрузка картинки в форму
-		$('#add-new-project').on('submit', _addProject); // добавление проекта		
+		$('#upload').on('change', _changefileName); // загрузка картинки в форму
+		$('#add-new-project').on('submit', _addProject); // добавление проекта
+		$('.b-close-x').on('click', _hideBoxProjectError);
 		};
-		
 
 	// Работает с модальным окном
 	var _showModal = function (e) {
@@ -29,15 +29,26 @@ var myModule = (function () {
     				form.find('.box-project-error').hide();
     				form.trigger('reset');
     			}
-		});
+			});
 		};
 	
-	// Загрузка картинки
-	var _getNameImage = function () {
-   		var input = $(this),
-    		name = input[0].files[0].name; // имя загруженного файла
-   		$('.name-input-load').val(name);
-  		};
+	// Загрузка имени картинки
+	var _getNameImage = function (loadImg) {
+		return loadImg.replace(/\\/g, '/').replace(/.*\//, '');
+		};
+
+	var _changefileName = function () {
+		var input = $(this),		
+			name = _getNameImage(input.val());
+		$('.name-input-load').val(name);
+		};
+
+	// Убираем блок с ошибкой добавления проекта
+	var _hideBoxProjectError = function (e) {
+		console.log('errorBoxhide!');
+		e.preventDefault();		
+		$('.box-project-error').hide();
+		};
 
 	// Добавляет проект
 	var _addProject = function (e) {
