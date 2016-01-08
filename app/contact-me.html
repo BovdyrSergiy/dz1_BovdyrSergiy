@@ -85,17 +85,17 @@
 			<h1 class="headersection">Сайт портфолио Бовдырь Сергей Николаевич</h1>
 			<div class="box-header-container">У Вас интересный проект? Напишите мне</div>
 			<div class="contact-form">
-				<form id="contact-me" name="form" method="post" action="#">
+				<form action="contactme.php" method="post" enctype="multipart/form-data" id="contact-me" name="form">
 					<div class="box-form clearfix">
 						<div class="box-left">
-							<label class="name-label">Имя<input class="name-input" type="text" placeholder="Как к Вам обращаться" qtip-content="Вы не ввели имя"></label>
+							<label class="name-label">Имя<input class="name-input" name="addName" type="text" placeholder="Как к Вам обращаться" qtip-content="Вы не ввели имя"></label>
 						</div>
 						<div class="box-right">
-							<label class="name-label">Email<input class="name-input" type="email" placeholder="Куда мне писать" qtip-position="right" qtip-content="Вы не ввели email"></label>
+							<label class="name-label">Email<input class="name-input" name="addEmail" type="email" placeholder="Куда мне писать" qtip-position="right" qtip-content="Вы не ввели email"></label>
 						</div>				
 					</div>
 					<div class="box-textarea">
-						<label class="name-label">Cообщение<textarea class="textarea" placeholder="Кратко в чём суть" qtip-content="Ваш вопрос"></textarea></label>
+						<label class="name-label">Cообщение<textarea class="textarea" name="addText" placeholder="Кратко в чём суть" qtip-content="Ваш вопрос"></textarea></label>
 					</div>
 					<div class="box-recaptcha">
 						<div class="g-recaptcha" data-sitekey="6LfYZRITAAAAAIV_r2shy9JTYcD96rlLcqguJ2ey"></div>

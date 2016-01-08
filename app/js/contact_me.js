@@ -7,26 +7,27 @@ var contactMe = (function () {
 
 	// Прослушивает события
 	var _setUpListners = function () {
-		$('#contact-me').on('submit', _submitForm);
+		$('#contact-me').on('submit', submitForm);
 	};
 
-	var _submitForm = function (ev){
-		console.log('Отправка формы');
-		ev.preventDefault();
-
-		var form = $(this),
-			url = 'contactme.php',
-			defObj = _ajaxForm(form, url);
-
-			// что-то будем делать с ответом с сервера defObj
+	var submitForm = function(form) {
+		var url = form.attr('action');
+		var data = new FormData($(form)[0]);
+		$.ajax({
+			url: url,
+			type: 'POST',
+			processData: false,
+			contentType: false,
+			dataType: 'json',
+			data: data
+		}).done(function(data) {
+			console.log('Форма отправлена!');
+			}
+		).fail(function() {
+			console.log('Проблемы в PHP');
+		});
 	};
 
-	var _ajaxForm = function (form, url) {
-		console.log('ajax запрос, но с проверкой!');
-		if (!validation.validateForm(form)) return false;
-		// Если false то код ниже не произойдёт
-		
-	};
 
 	// Возвращаем объект (публичные методы)
 	return {
