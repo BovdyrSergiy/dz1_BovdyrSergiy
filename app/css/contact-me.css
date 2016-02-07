@@ -107,6 +107,11 @@
 .contact-me .box-recaptcha {
 	min-height: 107px;
 }
+.g-recaptcha {
+	width: 304px;
+	height: 78px;
+	margin: 0 auto;
+}
 /*Кнопки*/
 .contact-me .buttonstyle {
 	font: 19px 'fira_sansbook';

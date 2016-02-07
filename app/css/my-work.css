@@ -41,9 +41,12 @@
 	border: 2px solid #3ba8c0;
 	border-radius: 4px;
 }
-.basic-info .project-box {
-	width: 179px;
-	height: 125px;
+.basic-info .add-project .project-box {
+	display: inline-block;
+	width: 183px;
+	height: 120px;
+	margin: 0;
+	position: relative;
 	text-align: center;
 }
 .basic-info .project-box {
@@ -52,6 +55,7 @@
 	height: 129px;
 	margin: 0;
 	position: relative;
+	text-align: center;
 }
 .basic-info .project-wrapper {
 	position: absolute;
